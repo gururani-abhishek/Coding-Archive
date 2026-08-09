@@ -12,9 +12,8 @@ public class binary_search {
         int target = 13;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            System.out.println("mid element is : " + nums[mid] + " cut at " + (mid+1));
-            sc.nextLine();
             if (nums[mid] == target) {
+                System.out.println("the target is at index : " + mid);
                 break;
             } else if (nums[mid] > target) {
                 right = mid - 1;
@@ -23,6 +22,5 @@ public class binary_search {
             }
         }
 
-        System.out.println("not found");
     }
 }
